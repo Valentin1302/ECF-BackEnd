@@ -1,0 +1,41 @@
+Temps accordé : 12h00 au centre de formation.
+
+Rappel du jargon technique : 
+* model = fichiers au sein desquels figure exclusivement du traitement de données.
+* vue = fichiers au sein desquels sont exclusivement gérés l'affichages d'interfaces.
+        Parfois, ces interfaces contiennent des donnnées récupérées depuis un model.
+
+AJOUT D'UN PLAT : 
+2 points : Création de la vue permettant l'ajout d'un plat. (formulaire d'ajout méthode POST)
+2 points : Création du model permettant l'ajout d'un plat (sans aspect sécuritaire).
+            Connexion à la base de données & contrôle de l'état.
+            Déclaration de la requête d'ajout prenant en paramètres les données 
+            Execution de la requête.
+            En cas de succès : redirection vers la vue sur laquelle sont répertoriés l'ensemble des plats.
+
+EDITION D'UN PLAT : 
+2 points : Création du model permettant la récupération des données du plat à éditer.
+2 points : Création de la vue permettant l'édition d'un plat identifié. (formulaire pré-renseigné à l'aide des données issues du model précédemment créé).
+Liaison de la vue permettant l'édition à chaque donnée de la vue générale. (sans tenir compte des aspects sécuritaires).
+2 points : Création de du model permettant la mise à jour, en base de données d'un plat identifié. (sans aspect sécuritaire).
+            Afficher les données du plat à modifier dans les champs.
+            En cas de succès : redirection vers la vue sur laquelle sont répertoriés l'ensemble des plats.
+
+ASPECTS SECURITAIRES :
+1 points : la suppression d'un plat (car par méthode GET, ce n'est pas sécurisé) 
+2 points : l'accès à la page de modification d'un plat est sécurisé ()
+2 points : Contrôle de l'intégrité des données
+1 point : Les formulaires sont communiqués par une méthode adéquate. (GET / POST ?)
+2 points : Les requêtes SQL présentes dans les models d'ajout et de modification sont préparées.
+
+
+GENERALITES & OPTIMISATIONS :
+1 point : Simplifier la requête SQL du model plats/getAll.php.
+1 point : Présence de commentaires adéquats / appropriés.
+
+20 points.
+
+BONUS : 
+2 points : Gérer la suppression d'un plat sans rafraichissement de page (via AJAX).
+2 points : Le travail rendu fait prevue d'esthétisme. (joli CSS).
+1 point : déploiement sur votre hébergement.

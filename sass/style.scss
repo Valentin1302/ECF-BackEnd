@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,500;1,800&family=Phudu:wght@300;400&family=Qwitcher+Grypen&family=Roboto:ital,wght@0,300;1,100&display=swap');
+header{
+    background-color: azure;
+    width: 100%;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        max-width: 1500px;
+        p{
+            text-transform: uppercase;
+            font-family: 'Phudu';
+            #plat{
+              color: brown;
+            }
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            li{
+                a{
+                  display: block;
+                  text-decoration: none;
+                  padding: 2rem;
+                  font-family: 'montserrat';
+                  color: black;
+                  font-weight: 700;
+                }
+            }
+        }
+    }
+}
+h1{
+    text-align: center;
+    font-family: 'roboto';
+    color: burlywood;
+    margin-top: 5rem;
+}
+main{
+    section{
+        max-width: 1500px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        #blocSite{
+            display: flex;
+            flex-direction: column;
+            width: 33%;
+            box-sizing: border-box;
+            padding: 2rem 1rem;
+            img{
+                height: 33%;
+                object-fit: contain;   
+            }
+        }
+    }
+    .blocAdd{
+        .add{
+            text-align: center;
+            a{
+                text-decoration: none;
+                background-color: black;
+                color: white;
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+footer{
+    background-color: azure;
+    padding: 2rem;
+    p{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1024px) {
+    header{
+        nav{
+            ul{
+                display: none;
+            }
+        }
+    }
+    main{
+        section{
+            #blocSite{
+                width: 50%;
+                padding: 1.5rem, 1.5rem, 1.5rem, 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 512px) {
+    main{
+        section{
+            #blocSite{
+                width: 100%;
+                padding: 1.5rem, 1.5rem, 1.5rem, 1.5rem;
+            }
+        }
+    }
+}
