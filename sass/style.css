@@ -38,20 +38,20 @@ h1 {
 }
 
 main section {
-  max-width: 1500px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
+  margin: auto;
+  max-width: 1500px;
+  flex-wrap: wrap;
+  display: flex;
 }
-main section #blocSite {
+main section .infoProduct {
   display: flex;
   flex-direction: column;
   width: 33%;
   box-sizing: border-box;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
-main section #blocSite img {
+main section .infoProduct img {
   height: 33%;
   object-fit: contain;
 }
